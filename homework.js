@@ -1,13 +1,9 @@
 //1
-function reverse(number) {
+function reverse(number) {debugger
     if (number< 10) {
-        return num
-    } else {
-        let lastNum = number % 10
-        let remainNum = Math.floor(number / 10)
-        let reversed = reverse(remainNum)
-        return +(lastNum.toString() + reversed.toString())
+        return number
     }
+    return +((number % 10).toString() + reverse(Math.floor(number / 10).toString()))
 }
 
 //2
